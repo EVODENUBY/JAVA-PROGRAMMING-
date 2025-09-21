@@ -1,3 +1,6 @@
+# 👨‍💻 Evode MUYISINGIZEMWESE | BIT | University of Rwanda : JAVA PROGRAMMING
+
+
 # 📘 Assignments Directory Guide
 
 This repository contains multiple Java Programming assignments organized by dates and folders.  
@@ -5,7 +8,7 @@ Use the  reference table below or expand the sections for details.
 
 ---
 
-## 📊  Assignments
+## 📑  Assignments
 
 | Date            | Assignment   | Path                                                                                                                                                                                       |
 |-----------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
