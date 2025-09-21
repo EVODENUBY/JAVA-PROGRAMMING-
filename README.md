@@ -7,11 +7,11 @@ Use the  reference table below or expand the sections for details.
 
 ## 📊  Assignments
 
-| Date            | Assignment   | Path                                                                 |
-|-----------------|--------------|----------------------------------------------------------------------|
-| 17 Sept 2025    | Assignment 1 | [`ASSIGNMENT1/com/assignment`](./ASSIGNMENT1/com/assignment)         |
-| 19 Sept 2025    | Assignment 2 | [`src/com/entities/Main.java`](./src/com/entities/Main.java) *(main)*<br> [`ASSIGNMENT 1/OOP_DayThree/src/com/entities`](./ASSIGNMENT%201/OOP_DayThree/src/com/entities) |
-| 22 Sept 2025    | Assignment 3 | [`src/Java_Assignment_3`](./src/Java_Assignment_3)                   |
+| Date            | Assignment   | Path                                                                                                                                                                                       |
+|-----------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 17 Sept 2025    | Assignment 1 | [`ASSIGNMENT1/com/assignment`](./ASSIGNMENT1/com/assignment)                                                                                                                               |
+| 19 Sept 2025    | Assignment 2 | [`src/com/entities/Main.java`](./src/com/entities/Main.java) *(main)*<br> [`DAY THREE ASSIGNMENT/OOP_DayThree/src/com/entities`](./DAY%20THREE%20ASSIGNMENT/OOP_DayThree/src/com/entities) |
+| 22 Sept 2025    | Assignment 3 | [`src/Java_Assignment_3`](./src/Java_Assignment_3)                                                                                                                                         |
 
 ---
 
@@ -34,7 +34,7 @@ Use the  reference table below or expand the sections for details.
   [`src/com/entities/Main.java`](./src/com/entities/Main.java)
 
 - **Alternative Path:**  
-  [`ASSIGNMENT 1/OOP_DayThree/src/com/entities`](./ASSIGNMENT%201/OOP_DayThree/src/com/entities)
+  [`DAY THREE ASSIGNMENT/OOP_DayThree/src/com/entities`](./DAY%20THREE%20ASSIGNMENT/OOP_DayThree/src/com/entities)
 
 > ✅ The **Main.java** file includes all the working code for Assignment 2.
 
