@@ -4,6 +4,8 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+DAY THREE ASSIGNMENT/OOP_DayThree/out/
+
 
 ### Eclipse ###
 .apt_generated
