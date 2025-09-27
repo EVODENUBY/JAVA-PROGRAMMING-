@@ -5,16 +5,14 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.Objects;
 
-public class ApplicantPanel extends JPanel {
+public class RecruiterApplicantPanel extends JPanel {
     JLabel header = new JLabel("LIST OF ALL JOB CANDIDATES/ JOB SEEKERS");
-
     JTable usersTable = new JTable();
     JScrollPane usersTableScrollPane = new JScrollPane(usersTable);
     DefaultTableModel model = new DefaultTableModel();
-    public ApplicantPanel() {
-        setLayout(new GridBagLayout());
+    public RecruiterApplicantPanel() {
+        setLayout(null);
         addComponents();
         createTable();
         setSizeToComponents();
@@ -30,14 +28,17 @@ public class ApplicantPanel extends JPanel {
         usersTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         usersTable.setRowHeight(40);
         usersTableScrollPane.setAutoscrolls(true);
+        header.setAlignmentX(Component.CENTER_ALIGNMENT);
+        header.setBounds(40, 20, 600, 20);
+        header.setForeground(new Color(0, 0, 255));
+
     }
     private void addComponents() {
+        add(usersTableScrollPane);
         add(header);
     }
     private void setSizeToComponents() {
-        header.setBounds(40,40,400,40);
-        header.setFont(new Font("Times New Roman", Font.BOLD, 25));
-        header.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         usersTableScrollPane.setBounds(10, 10 + 210, 1250, 400);
     }
     private void fetchUsers() {
@@ -45,7 +46,7 @@ public class ApplicantPanel extends JPanel {
                 Connection con = DB.getConnection()
         ) {
             var statement = con.createStatement();
-            var result = statement.executeQuery("select * from user WHERE role=`Candidate`");
+            var result = statement.executeQuery("select * from user WHERE role = 'Candidate'");
             while (result.next()) {
                 String userid = result.getString("user_id");
                 String username = result.getString("username");
@@ -63,6 +64,30 @@ public class ApplicantPanel extends JPanel {
             throw new RuntimeException(e);
         }
     }
+    private String hashPassword(String password) throws Exception {
+        java.security.MessageDigest md = java.security.MessageDigest.getInstance("SHA-256");
+        byte[] hash = md.digest(password.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+        StringBuilder hexString = new StringBuilder();
+        for (byte b : hash) {
+            String hex = Integer.toHexString(0xff & b);
+            if (hex.length() == 1) hexString.append('0');
+            hexString.append(hex);
+        }
+        return hexString.toString();
+    }
+
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+

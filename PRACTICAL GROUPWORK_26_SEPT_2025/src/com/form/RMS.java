@@ -21,9 +21,8 @@ public class RMS extends JFrame {
             tabs.add("Jobs", new JobPanel());
 
         } else if (role.equalsIgnoreCase("Recruiter")) {
-            tabs.add("Dashboard", new DashbaordPanel());
-            tabs.add("Post Job", new JobPanel());
-            tabs.add("Applicants", new ApplicantPanel());
+            tabs.add("Post Job", new RecruiterJobPanel());
+            tabs.add("Applicants", new RecruiterApplicantPanel());
 
 
         }
