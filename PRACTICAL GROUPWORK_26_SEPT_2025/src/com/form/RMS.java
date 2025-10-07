@@ -1,6 +1,5 @@
 package com.form;
 import com.panels.*;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -19,11 +18,11 @@ public class RMS extends JFrame {
 
         } else if (role.equalsIgnoreCase("Candidate")) {
             tabs.add("Jobs", new JobPanel());
+            tabs.add("Apply", new ApplyPanel());
 
         } else if (role.equalsIgnoreCase("Recruiter")) {
             tabs.add("Post Job", new RecruiterJobPanel());
             tabs.add("Applicants", new RecruiterApplicantPanel());
-
 
         }
         add(tabs,BorderLayout.CENTER);

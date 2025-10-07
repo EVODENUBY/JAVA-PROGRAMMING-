@@ -47,7 +47,7 @@ public class JobPanel extends JPanel {
 
     private void setSizeToComponents() {
         header.setForeground(Color.BLUE);
-        header.setBounds(300,80,300,30);
+        header.setBounds(300,80,500,30);
         header.setFont(new Font(new Font("TIMES NEW ROMAN", Font.BOLD, 26).getAttributes()));
         usersTableScrollPane.setBounds(10, 210, 1250, 400);
     }
